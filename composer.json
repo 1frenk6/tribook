@@ -1,0 +1,12 @@
+{
+  "name": "zameo94/tribook",
+  "type": "magento-module",
+  "license": "public",
+  "author": "Matteo Deliperi",
+  "description": "Modulo tutorial per Magento",
+  "require":
+  {
+    "php": ">=7.0",
+    "magento-hackathon/magento-composer-installer":"~3.1"
+  }
+}
