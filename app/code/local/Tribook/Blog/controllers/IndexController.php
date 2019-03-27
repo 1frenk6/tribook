@@ -11,7 +11,10 @@ class Tribook_Blog_IndexController extends Mage_Core_Controller_Front_Action
         $post = Mage::getModel('tribook_blog/post');
         $post->setTitle('Test title');
         $post->setAuthor('Zoran Šalamun');
+        $post->setDescription('This is a description');
+        $post->setEnable(1);
         $post->save();
+
         
         /*
          * Getting posts collection
@@ -30,7 +33,9 @@ class Tribook_Blog_IndexController extends Mage_Core_Controller_Front_Action
          */
         $posts = Mage::getModel('tribook_blog/post')->getCollection()
             ->addAttributeToSelect('title')
-            ->addAttributeToSelect('author');
+            ->addAttributeToSelect('author')
+            ->addAttributeToSelect('description')
+            ->addAttributeToSelect('enable');
         $posts->load();
         var_dump($posts);
 
