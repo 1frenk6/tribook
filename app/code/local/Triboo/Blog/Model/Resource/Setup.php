@@ -9,7 +9,6 @@ class Triboo_Blog_Model_Resource_Setup extends Mage_Eav_Model_Entity_Setup
 {
     /**
      * Method Triboo_Blog_Model_Resource_Setup getDefaultEntities.
-     * @param $entities
      * @return array
      */
     public function getDefaultEntities(): array
@@ -22,8 +21,6 @@ class Triboo_Blog_Model_Resource_Setup extends Mage_Eav_Model_Entity_Setup
                 'attributes'       => [
                     'tbblog_title' => [
                         'type'              => 'varchar',
-                        'backend'           => '',
-                        'frontend'          => '',
                         'label'             => 'tbblog_title',
                         'input'             => 'text',
                         'class'             => '',

@@ -16,8 +16,8 @@ $installer->addEntityType(Triboo_Blog_Helper_Config::ENTITY_TYPE_CODE_POST, [
     'entity_model'          => Triboo_Blog_Helper_Config::ENTITY_MODEL_POST,
     'attribute_model'       => '',
     'table'                 => Triboo_Blog_Helper_Config::ENTITY_TABLE_POST,
-    'increment_model'       => '',
-    'increment_per_store'   => '0'
+    'increment_model'       => 'eav/entity_increment_numeric',
+    'increment_per_store'   => '1'
     ]
 );
 /**
