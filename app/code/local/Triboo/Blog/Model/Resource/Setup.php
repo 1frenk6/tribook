@@ -8,7 +8,7 @@ class Triboo_Blog_Model_Resource_Setup extends Mage_Eav_Model_Entity_Setup
 {
     /**
      * Method Triboo_Blog_Model_Resource_Setup getDefaultEntities.
-     * @var $entities
+     * @param $entities
      * @return array
      */
     public function getDefaultEntities(): array

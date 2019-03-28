@@ -8,7 +8,7 @@ declare(strict_types=1);
 class Triboo_Blog_Helper_Data extends Mage_Core_Helper_Abstract
 {
     /**
-     * log file
+     * log name file
      */
     const LOG_FILE = 'tribooBlog.log';
     /**
@@ -21,10 +21,10 @@ class Triboo_Blog_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function __construct()
     {
-        $this->isLogEnable = Mage::getStoreConfig(Triboo_Blog_Helper_Config::LOG_ENABLE_CONFIG) ?: false;
+        (bool) $this->isLogEnable = Mage::getStoreConfig(Triboo_Blog_Helper_Config::LOG_ENABLE_CONFIG) ?: false;
     }
     /**
-     * @var $message
+     * @param $message
      * @return string
      */
     public function log($message): string

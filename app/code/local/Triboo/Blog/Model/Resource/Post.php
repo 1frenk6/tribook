@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Class Triboo_Blog_Model_Resource_Post
  */
@@ -9,7 +11,7 @@ class Triboo_Blog_Model_Resource_Post extends Mage_Eav_Model_Entity_Abstract
      * Triboo_Blog_Model_Resource_Post constructor.
      * @var $resource
      */
-    public function __construct()
+    public function _construct()
     {
         $resource = Mage::getSingleton('core/resource');
         $this->setType(Triboo_Blog_Helper_Config::ENTITY_TYPE_CODE_POST);
@@ -22,7 +24,7 @@ class Triboo_Blog_Model_Resource_Post extends Mage_Eav_Model_Entity_Abstract
      * Triboo_Blog_Model_Resource_Post getDefaultAttributes.
      * @return array
      */
-    protected function __getDefaultAttributes()
+    protected function __getDefaultAttributes(): array
     {
         return [
             'entity_type_id',

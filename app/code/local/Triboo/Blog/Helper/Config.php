@@ -6,7 +6,7 @@
 class Triboo_Blog_Helper_Config extends Mage_Core_Helper_Abstract
 {
     /**
-     * enable log
+     * log config path
      */
     const LOG_ENABLE_CONFIG = 'tbblog/log/enable';
     /**
