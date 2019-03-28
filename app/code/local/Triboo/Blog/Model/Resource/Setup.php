@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * Class Triboo_Blog_Model_Resource_Setup
  */
